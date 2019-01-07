@@ -1,0 +1,39 @@
+<html>
+	<head>	
+		<title> Test Validation</title>
+		
+		<script type="text/javascript">
+		
+		function validate(){
+			
+				var uid=document.login.uname.value;
+				
+				if(uid.value == "abc"){
+				
+					locate.href="index.html";
+				}else{
+				
+					alert("INVALID CRDENTIALS");
+					locate.href="fail.html";
+				}
+		}
+		
+		
+		function load(url){
+			location.href=url;
+		}
+		</script>
+	</head>	
+
+	<body>
+	
+		<form method="get"  name="login" onsubmit=return !!(validate())"">
+		
+		<input type="text" id="uname">
+		
+		<input type="submit" value="Sign IN">
+		<input type="reset" value="clear">
+		</form>
+	</body>
+
+</html>

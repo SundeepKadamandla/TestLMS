@@ -1,0 +1,59 @@
+html, body, h1, h2, h3, h4, h5, h6, div, span, ul, li, img, form, label, p, fieldset
+{
+
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	
+}
+
+.fix_width{
+	
+	margin-left:0;
+	margin-right:0;
+	width:1365;
+	height:auto;
+	
+	
+}
+
+#himg{
+	
+	height:44px;
+	background-image:url('New folder/rectangle_bar.png');
+	
+}
+
+#header{
+	
+	height:144px;
+	background-color:#809D36;
+
+
+}
+
+
+
+#middle_container{
+	
+	height:600px;
+	background-color:#FCFCFC;
+}
+
+
+#footer{
+	
+	height:250px;
+	background-color:#000842;
+}
+
+.imgage{
+	
+	height:80px;
+	width:296px;
+	
+}
