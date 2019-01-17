@@ -1,0 +1,104 @@
+<!DOCTYPe html>
+	<head>
+		<title>
+			LMS - St Joseph's Degree & PG College
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="login.css" media="screen">
+		
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="fileUpload.css" media="screen">
+		
+		
+		
+	</head>
+	
+	<body>
+		
+		<div id="header">
+		
+			<div class="fix_width">
+			
+				<div id="himg">
+					
+					<center><p>  Autonomous  ||   Affiliated to Osmania University  || 	Re-accreited by NAAC with 'A' Grade  </p><center>
+					
+				</div>
+				
+			</div>
+			
+			<img src="New folder/college_logo.png" class="imgage">
+		</div>
+		
+		<div id="middle_container">
+			
+			<div class="fix_width">
+			
+			Welcome to the Page
+			
+			<form id="dropFileForm" action="" method="get">
+			
+				<input type="file" name="file[]" id="fileInput" multiple>
+				
+				<label for="fileInput" id="fileLabel"
+				ondragover="overrideDefault(event);fileHover();"
+				ondragenter="overrideDefault(event);fileHover();"
+				ondragleave="overrideDefault(event);fileHoverEnd();"
+				ondrop="overrideDefault(event);fileHoverEnd();">
+				
+					<i class="fa fa-upload fa-5x"></i>
+					
+					<br><br>
+					Choose a file or drag it here
+				</label>
+				
+				<input type="submit" value="Upload" class="uploadButton">
+				
+			</form>
+			
+			<script>
+			
+			var dropFileForm = document.getElementById("dropFileForm");
+				
+				function overrideDefault(event){
+				
+					event.preventDefault();
+					event.stopPropogation();
+				
+				}
+				
+				function fileHover(){
+				
+					dropFileForm.classList.add("fileHover");
+				}
+				
+				function fileHoverEnd(){
+				
+					dropFileForm.classList.remove("fileHover");
+				
+				}
+			</script>
+				
+			
+			</div>
+		
+		</div>
+		
+		<div id="footer">
+			<div class="fix_width">
+			
+				
+			
+			</div>
+		
+		</div>
+		
+	
+	</body>
+	
+	
+
+</html>
+
+Welcome to YOur Page

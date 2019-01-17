@@ -1,0 +1,69 @@
+#dropFileForm{
+	
+	margin:16px;
+	text-align:center;
+	border-radius:8px;
+	overflow:hidden;
+	transition:.5s;
+}
+
+#dropFileForm #fileLabel {
+	
+	//background-color:rgba(0,255,0,0.5);
+	background-color:#e7e7e7;
+	display:block;
+	padding:16px;
+	position:relative;
+	}
+	
+#dropFileForm #fileInput{
+	
+	
+	display:none;
+	
+}
+
+#dropFileForm #fileLabel:after,
+#dropFileForm #fileLabel:before {
+	
+	position:absolute;
+	content:"";
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:#ffff;
+	z-index:-2;
+	
+	}
+/** not working  40 to 52 **/
+#dropFileForm #fileLabel:before{
+	
+	z-index:-1;
+	background:repeating-linear-gradient(45deg, transparent, transparent 50%, black 50%, black 80%);
+	opacity:0;
+	transition:.5s;
+}
+
+#dropFileForm.filehover #fileLabel:before{
+	
+	opacity:.25s;
+	
+}
+
+#dropFileForm .uploadButton{
+	
+	border:0;
+	outline:0;
+	width:100%;
+	padding:7px;
+	background-color:#809D36;
+	color:#ffff;
+	
+}
+
+#dropFileForm.filehover{
+	
+	
+	box-shadow:0 0 16px red;
+}

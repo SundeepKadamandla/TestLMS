@@ -1,0 +1,91 @@
+<!DOCTYPe html>
+	<head>
+		<title>
+			LMS - St Josphs Degree & PG College
+		</title>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="login.css" media="screen">
+		
+		
+		
+	</head>
+	
+	<body>
+		
+		<div id="header">
+		
+			<div class="fix_width">
+			
+				<div id="himg">
+					
+					<center><p>  Autonomous  ||   Affiliated to Osmania University  || 	Re-accreited by NAAC with 'A' Grade  </p><center>
+					
+				</div>
+				
+			</div>
+			
+			<img src="New folder/college_logo.png" class="imgage">
+		</div>
+		
+		<div id="middle_container">
+			
+			<div class="fix_width"><br><br><br><br><br><br>
+			<center>
+				<div class="login">
+				
+					<form method="post" name="login">
+				
+						<h1 class="login-title">LMS LOGIN </h1>
+						<br>
+
+						<input type="text" name="uname" placeholder="User Name"  class="form-input">
+					
+						<input type="password" name="pwd" placeholder="Password" class="form-input"><br>
+					
+						<input type="button" value="LOGIN" class="form-button" onclick="loginCheck(this.form)"/>
+				
+					</form>
+					
+					<script language="javascript">
+					
+						function loginCheck(form){
+							
+							if(form.uname.value == "admin" && form.pwd.value=="123"){
+								
+								window.open('successful.html','_self')
+							}
+							else{
+							
+								alert("Please Enter Valid User Id and Password")
+							}
+						
+						}
+					
+					</script>
+					<br>
+					
+					<p class="form-lost"><a href="">Forgot Password ?</a> | <a href="">Sign UP</a></p>
+					
+				</div>
+			</center>
+			</div>
+		
+		</div>
+		
+		<div id="footer">
+			<div class="fix_width">
+			
+				
+			
+			</div>
+		
+		</div>
+		
+	
+	</body>
+	
+	
+
+</html>
+
